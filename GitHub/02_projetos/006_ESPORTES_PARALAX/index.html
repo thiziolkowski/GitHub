@@ -1,0 +1,141 @@
+<!-- 
+	FONTE: UDEMY
+	CURSO: Desenvolvimento Web Completo - 20 cursos + 20 projetos
+	AUTORES:
+	- Jorge Sant Ana
+	- Jamilton Damasceno
+	Disponível em: https://www.udemy.com/course/web-completo. Acesso em: 2023/2024.
+-->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Parallax</title>
+	<meta charset="utf-8">
+	
+	<style type="text/css">
+		
+		/* Configuração padrão da página
+		-------------------------------*/
+		body, html {
+			margin: 0;
+			font: 16px "Lato", sans-serif;
+			color: #777;
+			height: 100%;
+		}
+
+		.conteudo {
+			color: #777;
+			background-color: white;
+			text-align: justify;
+			padding: 50px 80px;
+		}
+
+		h3 {
+			text-transform: uppercase;
+			color: #111;
+			text-align: center;
+		}
+
+		p{
+			margin-bottom: 20px;
+		}
+
+		/* Efeito Parallax
+		-------------------------------*/
+		.caixa1, .caixa2, .caixa3, .caixa4 {
+			position: relative;
+			height: 100%;
+			opacity: 0.7;                        
+			/*DEIXANDO A IMAGEM FOSCA*/
+			background-repeat: no-repeat;
+			background-size: cover; 
+			/*AJUSTA O TAMANHO DA IMAGEM AO TAMANHO DO MONITOR* DO USUÁRIO. PEGAR IMAGENS GRANDES*/
+			background-position: center;
+			background-attachment: fixed; 
+			/*FIXA A IMAGEM PARA QUE ELA NÃO SE MOVIMENTE COM O CONTEÚDO*/
+		}
+
+		.caixa1 {
+			background-image: url(imagens/imagem1.jpg);
+		}
+
+		.caixa2 {
+			background-image: url(imagens/imagem2.jpg);
+		}
+
+		.caixa3 {
+			background-image: url(imagens/imagem3.jpg);
+		}
+
+		.caixa4 {
+			background-image: url(imagens/imagem4.jpg);
+		}
+
+		.conteudo-titulo {
+			position: absolute;
+			left: 0;
+			top: 45%;
+			width: 100%;
+			/*OCUPA 100% DA MONITOR DO USUÁRIO*/
+			text-align: center;
+		}
+
+		.conteudo-titulo span.titulo {
+			color: #fff;
+			background-color: #111;
+			padding: 18px;
+			font-size: 25px;
+			letter-spacing: 5px;
+			/*ESPAÇAMENTO ENTRE LETRAS*/
+			text-transform: uppercase;
+			/*TRANSFORMA EM LETRAS MAIUSCULAS*/
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<div class="caixa1">
+		<div class="conteudo-titulo">
+			<span class="titulo">PASSEIO DE BALÕES</span>
+		</div>
+	</div>
+
+	<div class="conteudo">
+		<h3>Parallax</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consectetur cursus purus eu semper. Quisque viverra sollicitudin tristique. Fusce eget ligula felis. Integer imperdiet, diam vitae mollis commodo, odio mauris imperdiet ante, sed tristique dolor tellus id arcu. Aenean commodo diam id nunc scelerisque, tempor accumsan dolor facilisis. Aliquam nec sapien at ipsum sollicitudin iaculis a at quam. Suspendisse laoreet ligula vel dui porta ullamcorper. Phasellus ultrices sit amet ligula ac lacinia. Aliquam pellentesque leo cursus quam sodales mattis. Aenean nec dignissim elit.</p>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consectetur cursus purus eu semper. Quisque viverra sollicitudin tristique. Fusce eget ligula felis. Integer imperdiet, diam vitae mollis commodo, odio mauris imperdiet ante, sed tristique dolor tellus id arcu. Aenean commodo diam id nunc scelerisque, tempor accumsan dolor facilisis. Aliquam nec sapien at ipsum sollicitudin iaculis a at quam. Suspendisse laoreet ligula vel dui porta ullamcorper. Phasellus ultrices sit amet ligula ac lacinia. Aliquam pellentesque leo cursus quam sodales mattis. Aenean nec dignissim elit.</p>
+	</div>
+
+	<div class="caixa2">
+		<div class="conteudo-titulo">
+			<span class="titulo">Pegando a estrada</span>
+		</div>
+	</div>
+
+	<div class="conteudo">
+		<h3>Parallax</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consectetur cursus purus eu semper. Quisque viverra sollicitudin tristique. Fusce eget ligula felis. Integer imperdiet, diam vitae mollis commodo, odio mauris imperdiet ante, sed tristique dolor tellus id arcu. Aenean commodo diam id nunc scelerisque, tempor accumsan dolor facilisis. Aliquam nec sapien at ipsum sollicitudin iaculis a at quam. Suspendisse laoreet ligula vel dui porta ullamcorper. Phasellus ultrices sit amet ligula ac lacinia. Aliquam pellentesque leo cursus quam sodales mattis. Aenean nec dignissim elit.</p>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consectetur cursus purus eu semper. Quisque viverra sollicitudin tristique. Fusce eget ligula felis. Integer imperdiet, diam vitae mollis commodo, odio mauris imperdiet ante, sed tristique dolor tellus id arcu. Aenean commodo diam id nunc scelerisque, tempor accumsan dolor facilisis. Aliquam nec sapien at ipsum sollicitudin iaculis a at quam. Suspendisse laoreet ligula vel dui porta ullamcorper. Phasellus ultrices sit amet ligula ac lacinia. Aliquam pellentesque leo cursus quam sodales mattis. Aenean nec dignissim elit.</p>
+	</div>
+
+	<div class="caixa3">
+		<div class="conteudo-titulo">
+			<span class="titulo">Pôr do sol</span>
+		</div>
+	</div>
+
+	<div class="caixa4">
+		<div class="conteudo-titulo">
+			<span class="titulo">Montanhas</span>
+		</div>
+	</div>
+
+</body>
+</html>
